@@ -148,16 +148,20 @@ If it loads, everything worked!
 Docker
 `https://docs.docker.com/`
 - I used a bunch of different sections on the dockers docs site so I just linked the whole thing.
+- Used for building and testing the container locally.
 
 GitHub Actions
 `https://docs.github.com/en/actions`
+- Used for automating the build/push process.
 
 DockerHub httpd Base Image
 `https://hub.docker.com/_/httpd`
+- Used as the base Apache server image.
 
 Mermaid Diagramming
 `https://mermaid.js.org/`
 - First time using mermaid to make the diagram. It went decently pretty good.
+- Used to create the pipeline diagram.
 
 AI Assistance
 ChatGPT

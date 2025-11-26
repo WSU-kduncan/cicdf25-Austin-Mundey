@@ -36,7 +36,7 @@ git push origin v1.1.0
 ## GitHub Actions Workflow (Tag-Based)
 
 The workflow for semantic versioning is here:
-- `.github/workflows/release-dockerhub.yml`
+- [release-dockerhub.yml](./.github/workflows/release-dockerhub.yml)
 
 What this workflow does:
 - Runs ONLY when a version tag is pushed (v*.*.*)
