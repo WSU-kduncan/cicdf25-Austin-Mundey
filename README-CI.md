@@ -53,54 +53,50 @@ This is the website that the container will serve.
 ## Dockerfile
 
 The Dockerfile is at the root of the project.
-It looks like this:
 
-`FROM httpd:2.4
-COPY ./web-content/ /usr/local/apache2/htdocs/`
+It looks like this:
+- `FROM httpd:2.4
+- COPY ./web-content/ /usr/local/apache2/htdocs/`
 
 
 This tells Docker to:
-
-Use the Apache web server image.
-
-Copy the website files into the folder Apache uses for web pages.
+- Use the Apache web server image.
+- Copy the website files into the folder Apache uses for web pages.
 
 ## Building and Running the Container Locally
 Build the image:
-`docker build -t austinwsu/project4-site:latest .`
+- `docker build -t austinwsu/project4-site:latest .`
 
 Run the container:
-`docker run -d --name project4-test -p 8080:80 austinwsu/project4-site:latest`
-
+- `docker run -d --name project4-test -p 8080:80 austinwsu/project4-site:latest`
 
 Open your browser and go to:
-
-`http://localhost:8080`
+- `http://localhost:8080`
 
 Stop the container:
-`docker stop project4-test`
-`docker rm project4-test`
+- `docker stop project4-test`
+- `docker rm project4-test`
 
 ## GitHub Repository Secrets
 
 To let GitHub Actions log in to DockerHub, two secrets must be added:
 
 DOCKER_USERNAME
-`austinwsu`
+- `austinwsu`
 
 DOCKER_TOKEN
-`Enter PAT`
+- `Enter PAT`
 
 A DockerHub Personal Access Token (PAT).
-Created in DockerHub → `Account Settings` → `Security` → `New Access Token`
+- Created in DockerHub → `Account Settings` → `Security` → `New Access Token`
 
 Add these in:
-GitHub Repo → `Settings` → `Secrets` → `Actions`
+- GitHub Repo → `Settings` → `Secrets` → `Actions`
+
 GitHub Actions Workflow (CI)
 
 The workflow file is located here:
-
-`.github/workflows/release-dockerhub.yml`
+- `.github/workflows/release-dockerhub.yml`
 
 What it does:
 - Checks out the code.
@@ -126,13 +122,12 @@ The workflow runs when you push a tag that looks like:
 2. Check GitHub Actions
 
 Go to the Actions tab in GitHub.
-You should see a run triggered by `v1.0.0`.
+- You should see a run triggered by `v1.0.0`.
 
 3. Check DockerHub
 
 Go to your DockerHub image page:
-
-`https://hub.docker.com/r/austinwsu/project4-site/tags`
+- `https://hub.docker.com/r/austinwsu/project4-site/tags`
 
 You should see tags like:
 - `latest`
@@ -140,8 +135,8 @@ You should see tags like:
 - `1.0`
 
 4. Test the versioned image:
-`docker pull austinwsu/project4-site:1.0`
-`docker run -d -p 8082:80 --name version-test austinwsu/project4-site:1.0`
+- `docker pull austinwsu/project4-site:1.0`
+- `docker run -d -p 8082:80 --name version-test austinwsu/project4-site:1.0`
 
 
 Visit:
@@ -152,7 +147,7 @@ If it loads, everything worked!
 # Resources
 Docker
 `https://docs.docker.com/`
-(I used a bunch of different sections on the dockers docs site so I just linked the whole thing.)
+- I used a bunch of different sections on the dockers docs site so I just linked the whole thing.
 
 GitHub Actions
 `https://docs.github.com/en/actions`
@@ -162,7 +157,7 @@ DockerHub httpd Base Image
 
 Mermaid Diagramming
 `https://mermaid.js.org/`
-(First time using mermaid to make the diagram. It went decently pretty good.)
+- First time using mermaid to make the diagram. It went decently pretty good.
 
 AI Assistance
 ChatGPT
