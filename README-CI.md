@@ -156,7 +156,7 @@ GitHub Actions
 
 DockerHub httpd Base Image
 `https://hub.docker.com/_/httpd`
-- Used as the base Apache server image.
+- Helped me with the Dockerfile.
 
 Mermaid Diagramming
 `https://mermaid.js.org/`
