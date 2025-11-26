@@ -40,6 +40,10 @@ flowchart LR
     Push --> Done[Image Available on DockerHub]
 ```
 
+## What Happens in the Cloned Repo
+When you clone the repo to your computer, you can build and run the Docker container yourself to make sure the website works. You can also edit the files in the `web-content` folder and test everything locally before pushing changes back to GitHub.
+
+
 ## Web Content
 
 The website files live inside the web-content folder.
