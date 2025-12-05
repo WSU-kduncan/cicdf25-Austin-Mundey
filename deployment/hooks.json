@@ -1,0 +1,18 @@
+[
+  {
+    "id": "deploy-site",
+    "execute-command": "/home/ubuntu/deployment/refresh.sh",
+    "command-working-directory": "/home/ubuntu/deployment",
+    "response-message": "Deploy script started",
+    "trigger-rule": {
+      "match": {
+        "type": "value",
+        "value": "WSU-kduncan/cicdf25-Austin-Mundey",
+        "parameter": {
+          "source": "payload",
+          "name": "repository.full_name"
+        }
+      }
+    }
+  }
+]
