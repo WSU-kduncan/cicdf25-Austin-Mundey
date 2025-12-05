@@ -45,6 +45,7 @@ Running the container:
 - The diffrence between -d vs -it
     - -it: interactive mode used for debugging, attaches to terminal.
     - -d: runs detached in the background, -d is for deployment (in my opinion).
+
 Viewing the site to confirming it is working:
 - `http://54.85.117.137/`
 
@@ -145,7 +146,7 @@ What to look for in webhook logs:
 
 ```mermaid
 flowchart LR
-    Dev((Dev<br>updates code)) --> Tag[Push Tag to GitHub]
+    Dev((Updates code)) --> Tag[Push Tag to GitHub]
     Tag --> Actions[GitHub Actions<br>Builds & Pushes Image]
     Actions --> Hub[DockerHub<br>New Image Stored]
     Hub --> Webhook[GitHub Webhook<br>Sends Payload]
