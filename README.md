@@ -45,18 +45,4 @@ This project includes:
 Read the full Project 5 documentation here:  
 - [README-CD.md](README-CD.md)
 
----
 
-# Repository Structure
-
-├── web-content/ # HTML/CSS for the website
-├── Dockerfile # Builds the Apache-based container
-├── deployment/ # Scripts and services used in CD
-│ ├── refresh.sh
-│ ├── hooks.json
-│ └── webhook.service
-├── .github/
-│ └── workflows/
-│ └── release-dockerhub.yml # CI workflow file
-├── README-CI.md # Project 4 documentation
-└── README-CD.md # Project 5 documentation
