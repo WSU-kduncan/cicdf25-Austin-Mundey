@@ -58,7 +58,7 @@ chmod +x refresh.sh
 ./refresh.sh
 ```
 If the site loads after running it, the script should be working.
-- [refresh.sh](deployment/refresh.sh)
+- [refresh.sh](https://github.com/WSU-kduncan/cicdf25-Austin-Mundey/blob/main/deployment/refresh.sh)
 
 --- 
 
@@ -79,7 +79,7 @@ Summary:
 Verifying the defention file was loaded: 
 - `webhook -hooks /home/ubuntu/deployment/hooks.json -port 9000`
     - How I verified it was by not seeing any errors.
-- [hooks](deployment/hooks.json)
+- [hooks](https://github.com/WSU-kduncan/cicdf25-Austin-Mundey/blob/main/deployment/hooks.json)
 
 ### Webhook Service
 
@@ -100,7 +100,7 @@ What to look for in webhook logs:
 - Script executed
 - Docker stop/pull/run commands
 
-- [webhook.service](deployment/webhook.service)
+- [webhook.service](https://github.com/WSU-kduncan/cicdf25-Austin-Mundey/blob/main/deployment/webhook.service)
 
 ---
 
